@@ -1,6 +1,210 @@
 @import 'normalize';
 @import 'bits';
+@import 'typography';
 
 /***********
 GLOBAL
 ***********/
+
+html {
+	background:url(../../images/bg.jpg)center center fixed;
+	background-size:cover;
+}
+
+body {
+	font-family:hero;
+	padding-top:574px;
+	color:$darkDarkGrey;
+}
+
+
+
+/***********
+HEADER
+***********/
+
+.mainHeader {
+	// background:$lightLightGrey;
+	background:rgba(255,255,255,.9);
+	width:100%;
+	position:fixed;
+	top:0;
+	border-bottom:1px solid $darkGrey;
+	z-index:5;
+	&:after {
+		content:'';
+		display:table;
+		clear:both;
+	}
+}
+
+.logo {
+	width:30%;
+	float:left;
+	margin:.5% 0;
+}
+
+.mainNav {
+	float:left;
+	width:70%;
+	ul {
+		padding-left:2%;
+		&:after {
+			content:'';
+			display:table;
+			clear:both;
+		}
+		li {
+			transition:all .3s ease;
+			float:left;
+			width:14.285714%;
+			text-align:center;
+			position:relative;
+			&:nth-of-type(1) { @include navHover("Home"); }
+			&:nth-of-type(2) { @include navHover("Our Story"); }
+			&:nth-of-type(3) { @include navHover("Advocacy"); }
+			&:nth-of-type(4) { @include navHover("Tools"); }
+			&:nth-of-type(5) { @include navHover("Partnership"); }
+			&:nth-of-type(6) { @include navHover("Resources"); }
+			&:nth-of-type(7) { @include navHover("Contact"); }
+			&:hover {
+				transition:all .5s ease;
+				background:#2274dd;
+				a {
+					color:#2274dd;
+				}
+			}
+			a {
+				display:block;
+				padding:1.89em 0;
+				text-decoration:none;
+				color:$darkGrey;
+			}
+		}
+	}
+}
+
+.on {
+	background:#2274dd;
+	a {
+		color:#ffffff !important;
+	}
+}
+
+
+
+/***********
+BANNER
+***********/
+
+.banner {
+	position:fixed;
+	top:0;
+	z-index:-2;	
+	opacity:1;
+	transition:display .6s ease;
+	width:100%;
+}
+
+
+
+
+/***********
+SECTIONS
+***********/
+
+//ONE THIRD TWO THIRDS ALTERNATING 
+.oneThirdTwoThirds {
+	.imgContainer {
+		float:left;
+		width:33.333333%;
+		padding:0 3% 0 0;
+	}
+	.textContainer {
+		float:left;
+		width:66.666666%;
+		line-height:1.8em;
+	}
+	.row {
+		&:nth-of-type(2n) {
+			.imgContainer {
+				float:right;
+				padding:0 0 0 3%;
+			}
+		}
+	}
+}
+
+
+//PODS IN THIRDS
+.podThirds {
+	.pod {
+		width:33.333333%;
+		float:left;
+		&:first-of-type {
+			.innerPod {
+				float:left;
+			}
+		}
+		&:last-of-type {
+			.innerPod {
+				float:right;
+			}
+		}
+	}
+	.innerPod {
+		width:95%;
+		height:475px;
+		border:1px solid $darkGrey;
+		text-align:center;
+		padding:2%;
+		position:relative;
+		h4 {
+			color:$darkBlue;
+			margin:0;
+			padding:4% 0;
+		}
+		.imgContainer {
+			width:20%;
+			margin:auto;
+		}
+		.button {
+			position:absolute;
+			bottom:4%;
+			left:0;
+			right:0;
+			margin:auto;
+			width:40%;
+			font-size:.9em;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.seeThrough {
+	height:300px !important;
+	background:transparent;
+}
+
+
+section {
+	background:$lightLightGrey;
+	min-height:400px;
+	padding:5% 0;
+	position:relative;
+	// border-bottom:1px solid $darkGrey;
+}
+
+

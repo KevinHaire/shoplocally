@@ -378,32 +378,395 @@ table {
   border-spacing: 0;
 }
 
-.left {
-  float: left;
+.contain {
+  width: 1400px;
+  margin: auto;
+  position: relative;
+}
+.contain:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media all and (max-width: 1400px) {
+  .contain {
+    width: 100%;
+  }
 }
 
-.right {
-  float: right;
+.noPadding {
+  padding: 0 !important;
+}
+
+img {
+  max-width: 100%;
 }
 
 .center {
   text-align: center;
 }
 
-.contain {
-  width: 900px;
+.border:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin: auto;
-  position: relative;
+  width: 80%;
+  border-top: 1px solid #BEC0C2;
+  border-bottom: 2px solid #ffffff;
 }
 
-.clear {
+.row {
+  padding: 2% 0;
+}
+.row:after {
+  content: '';
+  display: table;
   clear: both;
 }
 
-.noMargin {
-  margin: 0px !important;
+@font-face {
+  font-family: 'hero';
+  src: url("../../fonts/hero-webfont.eot");
+  src: url("../../fonts/hero-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/hero-webfont.woff") format("woff"), url("../../fonts/hero-webfont.ttf") format("truetype"), url("../../fonts/hero-webfont.svg#heroregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: hero;
+  color: #a1a1a1;
+  font-weight: 100;
+  padding-bottom: 3%;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: hero;
+  color: #a1a1a1;
+  font-weight: 100;
+  padding-bottom: 3%;
+  font-size: 1.8em;
+}
+
+h3 {
+  font-family: hero;
+  color: #a1a1a1;
+  font-weight: 100;
+  padding-bottom: 3%;
+  font-size: 1.6em;
+}
+
+h4 {
+  font-family: hero;
+  color: #a1a1a1;
+  font-weight: 100;
+  padding-bottom: 3%;
+  font-size: 1.4em;
+}
+
+h5 {
+  font-family: hero;
+  color: #a1a1a1;
+  font-weight: 100;
+  padding-bottom: 3%;
+  font-size: 1.3em;
+}
+
+h6 {
+  font-family: hero;
+  color: #a1a1a1;
+  font-weight: 100;
+  padding-bottom: 3%;
+  font-size: 1.2em;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #3694f9;
+}
+
+.button {
+  padding: .8em 1.5em;
+  background: #3694f9;
+  color: #ffffff;
+}
+.button:active {
+  background: #73b4fb;
 }
 
 /***********
 GLOBAL
 ***********/
+html {
+  background: url(../../images/bg.jpg) center center fixed;
+  background-size: cover;
+}
+
+body {
+  font-family: hero;
+  padding-top: 574px;
+  color: gray;
+}
+
+/***********
+HEADER
+***********/
+.mainHeader {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #a1a1a1;
+  z-index: 5;
+}
+.mainHeader:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  width: 30%;
+  float: left;
+  margin: .5% 0;
+}
+
+.mainNav {
+  float: left;
+  width: 70%;
+}
+.mainNav ul {
+  padding-left: 2%;
+}
+.mainNav ul:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.mainNav ul li {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  float: left;
+  width: 14.285714%;
+  text-align: center;
+  position: relative;
+}
+.mainNav ul li:nth-of-type(1) a:before {
+  content: "Home";
+  position: absolute;
+  top: -29%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000000;
+}
+.mainNav ul li:nth-of-type(1):hover a:before {
+  -webkit-transition: top .2s ease;
+  transition: top .2s ease;
+  top: 1.89em;
+  color: #ffffff;
+}
+.mainNav ul li:nth-of-type(2) a:before {
+  content: "Our Story";
+  position: absolute;
+  top: -29%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000000;
+}
+.mainNav ul li:nth-of-type(2):hover a:before {
+  -webkit-transition: top .2s ease;
+  transition: top .2s ease;
+  top: 1.89em;
+  color: #ffffff;
+}
+.mainNav ul li:nth-of-type(3) a:before {
+  content: "Advocacy";
+  position: absolute;
+  top: -29%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000000;
+}
+.mainNav ul li:nth-of-type(3):hover a:before {
+  -webkit-transition: top .2s ease;
+  transition: top .2s ease;
+  top: 1.89em;
+  color: #ffffff;
+}
+.mainNav ul li:nth-of-type(4) a:before {
+  content: "Tools";
+  position: absolute;
+  top: -29%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000000;
+}
+.mainNav ul li:nth-of-type(4):hover a:before {
+  -webkit-transition: top .2s ease;
+  transition: top .2s ease;
+  top: 1.89em;
+  color: #ffffff;
+}
+.mainNav ul li:nth-of-type(5) a:before {
+  content: "Partnership";
+  position: absolute;
+  top: -29%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000000;
+}
+.mainNav ul li:nth-of-type(5):hover a:before {
+  -webkit-transition: top .2s ease;
+  transition: top .2s ease;
+  top: 1.89em;
+  color: #ffffff;
+}
+.mainNav ul li:nth-of-type(6) a:before {
+  content: "Resources";
+  position: absolute;
+  top: -29%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000000;
+}
+.mainNav ul li:nth-of-type(6):hover a:before {
+  -webkit-transition: top .2s ease;
+  transition: top .2s ease;
+  top: 1.89em;
+  color: #ffffff;
+}
+.mainNav ul li:nth-of-type(7) a:before {
+  content: "Contact";
+  position: absolute;
+  top: -29%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #000000;
+}
+.mainNav ul li:nth-of-type(7):hover a:before {
+  -webkit-transition: top .2s ease;
+  transition: top .2s ease;
+  top: 1.89em;
+  color: #ffffff;
+}
+.mainNav ul li:hover {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  background: #2274dd;
+}
+.mainNav ul li:hover a {
+  color: #2274dd;
+}
+.mainNav ul li a {
+  display: block;
+  padding: 1.89em 0;
+  text-decoration: none;
+  color: #a1a1a1;
+}
+
+.on {
+  background: #2274dd;
+}
+.on a {
+  color: #ffffff !important;
+}
+
+/***********
+BANNER
+***********/
+.banner {
+  position: fixed;
+  top: 0;
+  z-index: -2;
+  opacity: 1;
+  -webkit-transition: display .6s ease;
+  transition: display .6s ease;
+  width: 100%;
+}
+
+/***********
+SECTIONS
+***********/
+.oneThirdTwoThirds .imgContainer {
+  float: left;
+  width: 33.333333%;
+  padding: 0 3% 0 0;
+}
+.oneThirdTwoThirds .textContainer {
+  float: left;
+  width: 66.666666%;
+  line-height: 1.8em;
+}
+.oneThirdTwoThirds .row:nth-of-type(2n) .imgContainer {
+  float: right;
+  padding: 0 0 0 3%;
+}
+
+.podThirds .pod {
+  width: 33.333333%;
+  float: left;
+}
+.podThirds .pod:first-of-type .innerPod {
+  float: left;
+}
+.podThirds .pod:last-of-type .innerPod {
+  float: right;
+}
+.podThirds .innerPod {
+  width: 95%;
+  height: 475px;
+  border: 1px solid #a1a1a1;
+  text-align: center;
+  padding: 2%;
+  position: relative;
+}
+.podThirds .innerPod h4 {
+  color: #3694f9;
+  margin: 0;
+  padding: 4% 0;
+}
+.podThirds .innerPod .imgContainer {
+  width: 20%;
+  margin: auto;
+}
+.podThirds .innerPod .button {
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 40%;
+  font-size: .9em;
+}
+
+.seeThrough {
+  height: 300px !important;
+  background: transparent;
+}
+
+section {
+  background: #f4f4f4;
+  min-height: 400px;
+  padding: 5% 0;
+  position: relative;
+}

@@ -1,0 +1,60 @@
+h2 {
+	margin:0;
+	padding:0;
+}
+
+@mixin headingFont {
+	font-family:hero;
+	color:$darkGrey;
+	font-weight:100;
+	padding-bottom:3%;
+}
+
+h1 {
+	@include headingFont;
+	font-size:2em;
+}
+
+h2 {
+	@include headingFont;
+	font-size:1.8em;
+}
+
+h3 {
+	@include headingFont;
+	font-size:1.6em;
+}
+
+h4 {
+	@include headingFont;
+	font-size:1.4em;
+}
+
+h5 {
+	@include headingFont;
+	font-size:1.3em;
+}
+
+h6 {
+	@include headingFont;
+	font-size:1.2em;
+}
+
+p {
+	margin:0;
+	padding:0;
+}
+
+a {
+	text-decoration:none;
+	color:$darkBlue;
+}
+
+.button {
+	padding:.8em 1.5em;
+	background:$darkBlue;
+	color:#ffffff;
+	&:active {
+		background:$lightBlue;
+	}
+}

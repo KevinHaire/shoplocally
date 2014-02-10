@@ -1,31 +1,100 @@
-.left {
-	float:left;
+
+
+body {
+	// -webkit-font-smoothing: antialiased;
+	// -moz-font-smoothing: antialiased;
+	// -o-font-smoothing: antialiased;
 }
 
-.right {
-	float:right;
+$lightLightGrey: #f4f4f4;
+$lightGrey: #bdbdbd;
+$darkGrey: #a1a1a1;
+$darkDarkGrey: #808080;
+$lightBlue: #73b4fb;
+$darkBlue: #3694f9;
+
+.contain {
+	width:1400px;
+	margin:auto;
+	position:relative;
+	// padding:0 0 5% 0;
+	&:after {
+		content:'';
+		display:table;
+		clear:both;
+	}
+	@media all and (max-width: 1400px) {
+		width:100%;
+	}
+}
+
+.noPadding {
+	padding:0 !important;
+}
+
+img {
+	max-width:100%;
 }
 
 .center {
 	text-align:center;
 }
 
-.contain {
-	width:900px;
-	margin:auto;
-	position:relative;
+.border {
+	&:after {
+		content:'';
+		position:absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:auto;
+		width:80%;
+		border-top:1px solid #BEC0C2;
+		border-bottom:2px solid #ffffff;
+	}
 }
 
-.clear {
-	clear:both;
+.row {
+	padding:2% 0;
+	&:after {
+		content:'';
+		display:table;
+		clear:both;
+	}
 }
 
-.noMargin {
-	margin:0px !important;
+
+@font-face {
+	font-family: 'hero';
+	src: url('../../fonts/hero-webfont.eot');
+	src: url('../../fonts/hero-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../../fonts/hero-webfont.woff') format('woff'),
+	     url('../../fonts/hero-webfont.ttf') format('truetype'),
+	     url('../../fonts/hero-webfont.svg#heroregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-body {
-	// -webkit-font-smoothing: antialiased;
-	// -moz-font-smoothing: antialiased;
-	// -o-font-smoothing: antialiased;
+
+@mixin navHover($navText) {
+	a {
+		&:before {
+			content:$navText;
+			position:absolute;
+			top:-29%;
+			left:0;
+			right:0;
+			margin:auto;
+			color:#000000;
+		}
+	}
+	&:hover {
+		a {
+			&:before {
+				transition:top .2s ease;
+				top:1.89em;
+				color:#ffffff;
+			}
+		}
+	}
 }

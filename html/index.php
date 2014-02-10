@@ -1,7 +1,3 @@
-<?php 
-include 'inc/_variables.php';
-include 'inc/_redirect.php'; 
-?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -15,7 +11,126 @@ include 'inc/_head.php';
 
 <body>
 
-	
+	<header class="mainHeader">
+		<div class="contain noPadding">
+			<div class="logo">
+				<img src="images/logo.png" alt="ShopLocally.com Logo" />
+			</div>
+			<nav class="mainNav">
+				<ul>
+					<li class="on"><a href="">Home</a></li>
+					<li><a href="">Our Story</a></li>
+					<li><a href="">Advocacy</a></li>
+					<li><a href="">Tools</a></li>
+					<li><a href="">Partnership</a></li>
+					<li><a href="">Resources</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- <section class="banner">
+
+	</section> -->
+
+	<img class="banner" src="images/banner.jpg" alt="">
+
+	<section class="oneThirdTwoThirds border">
+		<div class="contain center">
+			<h2>Building stronger, more vibrant local economies</h2>
+			<div class="row">
+				<div class="imgContainer">
+					<img src="images/localmultiplier.png" alt="Local Multiplier">
+				</div>
+				<div class="textContainer">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo, excepturi labore error autem enim fugiat natus voluptatum quos et sint illum corrupti. Voluptatem, animi officiis dolorum natus mollitia perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sapiente, sit, nihil libero sint aliquid voluptatem eum nobis atque praesentium pariatur autem veritatis expedita hic odio iure fuga perferendis temporibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias, temporibus, vel repellendus error omnis numquam blanditiis facere consequatur provident eveniet nihil repellat quidem alias sapiente cupiditate impedit sunt voluptas.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="imgContainer">
+					<img src="images/shopLocal.jpg" alt="Local Multiplier">
+				</div>
+				<div class="textContainer">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, explicabo, excepturi labore error autem enim fugiat natus voluptatum quos et sint illum corrupti. Voluptatem, animi officiis dolorum natus mollitia perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sapiente, sit, nihil libero sint aliquid voluptatem eum nobis atque praesentium pariatur autem veritatis expedita hic odio iure fuga perferendis temporibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, molestias, temporibus, vel repellendus error omnis numquam blanditiis facere consequatur provident eveniet nihil repellat quidem alias sapiente cupiditate impedit sunt voluptas.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="podThirds border">
+		<div class="contain center">
+			<h2>How we’re building a stronger local economy by connecting local partners and empowering local businesses to drive results</h2>
+			<div class="row">
+				<div class="pod">
+					<div class="innerPod">
+						<h4>This is a heading</h4>
+						<div class="imgContainer">
+							<img src="images/location.png" alt="">
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, dolor perspiciatis natus nihil distinctio modi alias at illo. Ex, doloremque cum rerum molestiae impedit quam aperiam ipsa deserunt dolore earum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, laudantium, vitae, autem magnam qui odio quam a neque quo optio est totam facere atque quos consequuntur. Odit, eligendi rem tenetur?</p>
+						<a class="button" href="##">click here</a>
+					</div>
+				</div>
+				<div class="pod">
+					<div class="innerPod">
+						<h4>This is a heading</h4>
+						<div class="imgContainer">
+							<img src="images/location.png" alt="">
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, architecto, ab, dignissimos, distinctio aperiam eos ipsum voluptatem autem quia recusandae praesentium quod placeat numquam inventore accusantium reiciendis repudiandae corporis commodi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, temporibus earum debitis minus molestiae. Sunt, laborum, eveniet, neque, asperiores voluptatum ea nemo harum nobis sint culpa iusto corrupti eos perferendis!</p>
+						<a class="button" href="##">click here</a>
+					</div>
+				</div>
+				<div class="pod">
+					<div class="innerPod">
+						<h4>This is a heading</h4>
+						<div class="imgContainer">
+							<img src="images/location.png" alt="">
+						</div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, repellendus, dicta, laboriosam nostrum mollitia soluta quisquam fugit est eveniet dolorum blanditiis et porro doloribus culpa incidunt? Nobis vitae qui fugiat?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam vel eum ullam quaerat laudantium soluta nostrum reiciendis voluptas aliquam cum. Facere magnam quam voluptatem repellat mollitia a totam autem velit?</p>
+						<a class="button" href="##">click here</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="whyLocal">
+		<div class="contain">
+			<h2>Why Local?</h2>
+		</div>
+	</section>
+
+	<section class="seeThrough">
+		<div class="contain">
+			
+		</div>
+	</section>
+
+	<section class="whyLocal">
+		<div class="contain">
+			<h2>Why Local?</h2>
+		</div>
+	</section>
+
+	<section class="whyLocal">
+		<div class="contain">
+			<h2>Why Local?</h2>
+		</div>
+	</section>
+
+	<section class="whyLocal">
+		<div class="contain">
+			<h2>Why Local?</h2>
+		</div>
+	</section>
+
+	<section class="whyLocal">
+		<div class="contain">
+			<h2>Why Local?</h2>
+		</div>
+	</section>
 
 	<?php include 'inc/_footer.php' ?>
 
