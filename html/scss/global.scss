@@ -13,8 +13,9 @@ html {
 
 body {
 	font-family:hero;
-	padding-top:574px;
-	color:$darkDarkGrey;
+	padding-top:674px;
+	color:$darkGrey;
+	font-size:1.3em;
 }
 
 
@@ -29,7 +30,7 @@ HEADER
 	width:100%;
 	position:fixed;
 	top:0;
-	border-bottom:1px solid $darkGrey;
+	// border-bottom:1px solid $darkGrey;
 	z-index:5;
 	&:after {
 		content:'';
@@ -64,7 +65,7 @@ HEADER
 			&:nth-of-type(2) { @include navHover("Our Story"); }
 			&:nth-of-type(3) { @include navHover("Advocacy"); }
 			&:nth-of-type(4) { @include navHover("Tools"); }
-			&:nth-of-type(5) { @include navHover("Partnership"); }
+			&:nth-of-type(5) { @include navHover("Partner"); }
 			&:nth-of-type(6) { @include navHover("Resources"); }
 			&:nth-of-type(7) { @include navHover("Contact"); }
 			&:hover {
@@ -76,7 +77,8 @@ HEADER
 			}
 			a {
 				display:block;
-				padding:1.89em 0;
+				font-size:.8em;
+				padding:1.8em 0;
 				text-decoration:none;
 				color:$darkGrey;
 			}
@@ -98,12 +100,23 @@ BANNER
 ***********/
 
 .banner {
+	background:url(../../images/banner.jpg)top center no-repeat;
 	position:fixed;
 	top:0;
-	z-index:-2;	
 	opacity:1;
 	transition:display .6s ease;
 	width:100%;
+	text-align:center;
+	min-height:600px;
+	h1 {
+		padding:4em 0;
+		font-size:3.7em;
+		color:#ffffff;
+		text-shadow:0px 0px 15px #000;
+		@media all and (max-width:1775px) {
+			padding:3.5em 0em;
+		}
+	}
 }
 
 
@@ -141,24 +154,23 @@ SECTIONS
 	.pod {
 		width:33.333333%;
 		float:left;
-		&:first-of-type {
-			.innerPod {
-				float:left;
-			}
-		}
-		&:last-of-type {
-			.innerPod {
-				float:right;
-			}
-		}
+		&:nth-of-type(1) {.innerPod {float:left;}}
+		&:nth-of-type(2) {.innerPod {margin:auto;}}
+		&:nth-of-type(3) {.innerPod {float:right;}}
 	}
 	.innerPod {
 		width:95%;
-		height:475px;
+		height:610px;
 		border:1px solid $darkGrey;
 		text-align:center;
 		padding:2%;
 		position:relative;
+		box-shadow:0 24px 22px -22px black;
+		transition:all .2s ease;
+		&:hover {
+			transition:all .2s ease;
+			transform:scale(1.1);
+		}
 		h4 {
 			color:$darkBlue;
 			margin:0;
@@ -181,7 +193,46 @@ SECTIONS
 }
 
 
+//HALVES BANNER CONTENT
+.halvesBannerContent {
+	&:after {
+		content:'';
+		display:table;
+		clear:both;
+	}
+}
 
+.halfBanner, .halfBody {
+	width:50%;
+	float:left;
+}
+
+.halfBannerContent, .halfBodyContent {
+	height:0;
+	overflow:hidden;
+	padding-bottom:58%;
+}
+
+.halfBodyContent {
+	background:#3e3e3e;
+	text-align:center;
+	position:relative;
+}
+
+.halfBodyInnerContent {
+	position:absolute;
+	top:2em;
+	padding:1em;
+	@media all and(max-width:1450px) {
+		top:0;
+	}
+	h2 {
+		color:$darkBlue;
+	}
+	p {
+		margin-bottom:2em;
+	}
+}
 
 
 
@@ -194,14 +245,14 @@ SECTIONS
 
 
 .seeThrough {
-	height:300px !important;
+	height:450px !important;
 	background:transparent;
 }
 
 
 section {
 	background:$lightLightGrey;
-	min-height:400px;
+	// min-height:400px;
 	padding:5% 0;
 	position:relative;
 	// border-bottom:1px solid $darkGrey;

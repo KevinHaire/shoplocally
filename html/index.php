@@ -22,7 +22,7 @@ include 'inc/_head.php';
 					<li><a href="">Our Story</a></li>
 					<li><a href="">Advocacy</a></li>
 					<li><a href="">Tools</a></li>
-					<li><a href="">Partnership</a></li>
+					<li><a href="">Partner</a></li>
 					<li><a href="">Resources</a></li>
 					<li><a href="">Contact</a></li>
 				</ul>
@@ -30,15 +30,13 @@ include 'inc/_head.php';
 		</div>
 	</header>
 
-	<!-- <section class="banner">
-
-	</section> -->
-
-	<img class="banner" src="images/banner.jpg" alt="">
+	<section class="banner noPadding">
+		<h1>Building stronger, more vibrant local economies</h1>
+	</section>
 
 	<section class="oneThirdTwoThirds border">
 		<div class="contain center">
-			<h2>Building stronger, more vibrant local economies</h2>
+			<!-- <h2>Building stronger, more vibrant local economies</h2> -->
 			<div class="row">
 				<div class="imgContainer">
 					<img src="images/localmultiplier.png" alt="Local Multiplier">
@@ -96,6 +94,29 @@ include 'inc/_head.php';
 		</div>
 	</section>
 
+	<section class="halvesBannerContent">
+		<div class="halfBanner">
+			<div class="halfBannerContent">
+				<img src="images/colinPress.jpg" alt="colin">
+			</div>
+		</div>
+		<div class="halfBody">
+			<div class="halfBodyContent">
+				<div class="halfBodyInnerContent">
+					<h2>How we’re building a stronger local economy by connecting local partners and empowering local businesses to drive results</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, eos illum nostrum odio magni suscipit vel. Similique, perspiciatis, perferendis a voluptatum illo ratione sit dolor repellat nobis deleniti laborum aperiam.</p>
+					<a class="button">Click</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="whyLocal">
+		<div class="contain">
+			<h2>Why Local?</h2>
+		</div>
+	</section>
+
 	<section class="whyLocal">
 		<div class="contain">
 			<h2>Why Local?</h2>
@@ -105,18 +126,6 @@ include 'inc/_head.php';
 	<section class="seeThrough">
 		<div class="contain">
 			
-		</div>
-	</section>
-
-	<section class="whyLocal">
-		<div class="contain">
-			<h2>Why Local?</h2>
-		</div>
-	</section>
-
-	<section class="whyLocal">
-		<div class="contain">
-			<h2>Why Local?</h2>
 		</div>
 	</section>
 

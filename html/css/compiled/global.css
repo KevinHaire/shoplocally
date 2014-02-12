@@ -391,7 +391,7 @@ table {
 }
 @media all and (max-width: 1400px) {
   .contain {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -443,7 +443,7 @@ h2 {
 
 h1 {
   font-family: hero;
-  color: #a1a1a1;
+  color: gray;
   font-weight: 100;
   padding-bottom: 3%;
   font-size: 2em;
@@ -451,7 +451,7 @@ h1 {
 
 h2 {
   font-family: hero;
-  color: #a1a1a1;
+  color: gray;
   font-weight: 100;
   padding-bottom: 3%;
   font-size: 1.8em;
@@ -459,7 +459,7 @@ h2 {
 
 h3 {
   font-family: hero;
-  color: #a1a1a1;
+  color: gray;
   font-weight: 100;
   padding-bottom: 3%;
   font-size: 1.6em;
@@ -467,7 +467,7 @@ h3 {
 
 h4 {
   font-family: hero;
-  color: #a1a1a1;
+  color: gray;
   font-weight: 100;
   padding-bottom: 3%;
   font-size: 1.4em;
@@ -475,7 +475,7 @@ h4 {
 
 h5 {
   font-family: hero;
-  color: #a1a1a1;
+  color: gray;
   font-weight: 100;
   padding-bottom: 3%;
   font-size: 1.3em;
@@ -483,7 +483,7 @@ h5 {
 
 h6 {
   font-family: hero;
-  color: #a1a1a1;
+  color: gray;
   font-weight: 100;
   padding-bottom: 3%;
   font-size: 1.2em;
@@ -518,8 +518,9 @@ html {
 
 body {
   font-family: hero;
-  padding-top: 574px;
-  color: gray;
+  padding-top: 674px;
+  color: #a1a1a1;
+  font-size: 1.3em;
 }
 
 /***********
@@ -530,7 +531,6 @@ HEADER
   width: 100%;
   position: fixed;
   top: 0;
-  border-bottom: 1px solid #a1a1a1;
   z-index: 5;
 }
 .mainHeader:after {
@@ -575,7 +575,7 @@ HEADER
 }
 .mainNav ul li:nth-of-type(1):hover a:before {
   transition: top .2s ease;
-  top: 1.89em;
+  top: 1.8em;
   color: #ffffff;
 }
 .mainNav ul li:nth-of-type(2) a:before {
@@ -589,7 +589,7 @@ HEADER
 }
 .mainNav ul li:nth-of-type(2):hover a:before {
   transition: top .2s ease;
-  top: 1.89em;
+  top: 1.8em;
   color: #ffffff;
 }
 .mainNav ul li:nth-of-type(3) a:before {
@@ -603,7 +603,7 @@ HEADER
 }
 .mainNav ul li:nth-of-type(3):hover a:before {
   transition: top .2s ease;
-  top: 1.89em;
+  top: 1.8em;
   color: #ffffff;
 }
 .mainNav ul li:nth-of-type(4) a:before {
@@ -617,11 +617,11 @@ HEADER
 }
 .mainNav ul li:nth-of-type(4):hover a:before {
   transition: top .2s ease;
-  top: 1.89em;
+  top: 1.8em;
   color: #ffffff;
 }
 .mainNav ul li:nth-of-type(5) a:before {
-  content: "Partnership";
+  content: "Partner";
   position: absolute;
   top: -29%;
   left: 0;
@@ -631,7 +631,7 @@ HEADER
 }
 .mainNav ul li:nth-of-type(5):hover a:before {
   transition: top .2s ease;
-  top: 1.89em;
+  top: 1.8em;
   color: #ffffff;
 }
 .mainNav ul li:nth-of-type(6) a:before {
@@ -645,7 +645,7 @@ HEADER
 }
 .mainNav ul li:nth-of-type(6):hover a:before {
   transition: top .2s ease;
-  top: 1.89em;
+  top: 1.8em;
   color: #ffffff;
 }
 .mainNav ul li:nth-of-type(7) a:before {
@@ -659,7 +659,7 @@ HEADER
 }
 .mainNav ul li:nth-of-type(7):hover a:before {
   transition: top .2s ease;
-  top: 1.89em;
+  top: 1.8em;
   color: #ffffff;
 }
 .mainNav ul li:hover {
@@ -671,7 +671,8 @@ HEADER
 }
 .mainNav ul li a {
   display: block;
-  padding: 1.89em 0;
+  font-size: .8em;
+  padding: 1.8em 0;
   text-decoration: none;
   color: #a1a1a1;
 }
@@ -687,12 +688,25 @@ HEADER
 BANNER
 ***********/
 .banner {
+  background: url(../../images/banner.jpg) top center no-repeat;
   position: fixed;
   top: 0;
-  z-index: -2;
   opacity: 1;
   transition: display .6s ease;
   width: 100%;
+  text-align: center;
+  min-height: 600px;
+}
+.banner h1 {
+  padding: 4em 0;
+  font-size: 3.7em;
+  color: #ffffff;
+  text-shadow: 0px 0px 15px #000;
+}
+@media all and (max-width: 1775px) {
+  .banner h1 {
+    padding: 3.5em 0em;
+  }
 }
 
 /***********
@@ -717,19 +731,28 @@ SECTIONS
   width: 33.333333%;
   float: left;
 }
-.podThirds .pod:first-of-type .innerPod {
+.podThirds .pod:nth-of-type(1) .innerPod {
   float: left;
 }
-.podThirds .pod:last-of-type .innerPod {
+.podThirds .pod:nth-of-type(2) .innerPod {
+  margin: auto;
+}
+.podThirds .pod:nth-of-type(3) .innerPod {
   float: right;
 }
 .podThirds .innerPod {
   width: 95%;
-  height: 475px;
+  height: 610px;
   border: 1px solid #a1a1a1;
   text-align: center;
   padding: 2%;
   position: relative;
+  box-shadow: 0 24px 22px -22px black;
+  transition: all .2s ease;
+}
+.podThirds .innerPod:hover {
+  transition: all .2s ease;
+  transform: scale(1.1);
 }
 .podThirds .innerPod h4 {
   color: #3694f9;
@@ -750,14 +773,53 @@ SECTIONS
   font-size: .9em;
 }
 
+.halvesBannerContent:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.halfBanner, .halfBody {
+  width: 50%;
+  float: left;
+}
+
+.halfBannerContent, .halfBodyContent {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 58%;
+}
+
+.halfBodyContent {
+  background: #3e3e3e;
+  text-align: center;
+  position: relative;
+}
+
+.halfBodyInnerContent {
+  position: absolute;
+  top: 2em;
+  padding: 1em;
+}
+@media all and (max-width: 1450px) {
+  .halfBodyInnerContent {
+    top: 0;
+  }
+}
+.halfBodyInnerContent h2 {
+  color: #3694f9;
+}
+.halfBodyInnerContent p {
+  margin-bottom: 2em;
+}
+
 .seeThrough {
-  height: 300px !important;
+  height: 450px !important;
   background: transparent;
 }
 
 section {
   background: #f4f4f4;
-  min-height: 400px;
   padding: 5% 0;
   position: relative;
 }
