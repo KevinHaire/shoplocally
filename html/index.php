@@ -11,24 +11,7 @@ include 'inc/_head.php';
 
 <body>
 
-	<header class="mainHeader">
-		<div class="contain noPadding">
-			<div class="logo">
-				<img src="images/logo.png" alt="ShopLocally.com Logo" />
-			</div>
-			<nav class="mainNav">
-				<ul>
-					<li class="on"><a href="">Home</a></li>
-					<li><a href="">Our Story</a></li>
-					<li><a href="">Advocacy</a></li>
-					<li><a href="">Tools</a></li>
-					<li><a href="">Partner</a></li>
-					<li><a href="">Resources</a></li>
-					<li><a href="">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<?php include 'inc/_header.php' ?>
 
 	<section class="banner noPadding">
 		<h1>Building stronger, more vibrant local economies</h1>

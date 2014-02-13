@@ -496,16 +496,16 @@ p {
 
 a {
   text-decoration: none;
-  color: #3694f9;
+  color: #2274dd;
 }
 
 .button {
   padding: .8em 1.5em;
-  background: #3694f9;
+  background: #2274dd;
   color: #ffffff;
 }
 .button:active {
-  background: #73b4fb;
+  background: #3694f9;
 }
 
 /***********
@@ -522,6 +522,16 @@ body {
   color: #a1a1a1;
   font-size: 1.3em;
 }
+@media all and (max-width: 1050px) {
+  body {
+    padding-top: 525px;
+  }
+}
+@media all and (max-width: 800px) {
+  body {
+    padding-top: 0;
+  }
+}
 
 /***********
 HEADER
@@ -533,24 +543,110 @@ HEADER
   top: 0;
   z-index: 5;
 }
+@media all and (max-width: 800px) {
+  .mainHeader {
+    position: absolute;
+    height: 3.5em;
+  }
+}
 .mainHeader:after {
   content: '';
   display: table;
   clear: both;
 }
 
+@media all and (max-width: 800px) {
+  .mainHeader > .contain {
+    width: 100%;
+  }
+}
+
 .logo {
   width: 30%;
   float: left;
-  margin: .5% 0;
+  margin: .33em 0;
+}
+.logo img {
+  max-height: 2.884em;
+}
+@media all and (max-width: 1050px) {
+  .logo {
+    width: 6.5%;
+  }
+}
+@media all and (max-width: 900px) {
+  .logo {
+    margin-top: .6em;
+  }
+}
+@media all and (max-width: 800px) {
+  .logo {
+    float: none;
+    width: 13em;
+    margin: auto;
+    padding: .3em 0;
+  }
+}
+@media all and (max-width: 450px) {
+  .logo {
+    width: 10em;
+    padding: .8em 0;
+    float: left;
+    margin-left: 3%;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .fullLogo {
+    display: none;
+  }
+}
+@media all and (max-width: 800px) {
+  .fullLogo {
+    display: block;
+  }
+}
+
+.badgeLogo {
+  display: none;
+}
+@media all and (max-width: 1050px) {
+  .badgeLogo {
+    display: block;
+  }
+}
+@media all and (max-width: 800px) {
+  .badgeLogo {
+    display: none;
+  }
 }
 
 .mainNav {
+  transition: all .3s ease;
   float: left;
   width: 70%;
 }
+@media all and (max-width: 1050px) {
+  .mainNav {
+    width: 93.5%;
+  }
+}
+@media all and (max-width: 800px) {
+  .mainNav {
+    max-height: 0px;
+    overflow: hidden;
+    float: none;
+    width: 100%;
+  }
+}
 .mainNav ul {
   padding-left: 2%;
+}
+@media all and (max-width: 800px) {
+  .mainNav ul {
+    padding-left: 0;
+    background: rgba(255, 255, 255, 0.9);
+  }
 }
 .mainNav ul:after {
   content: '';
@@ -573,10 +669,20 @@ HEADER
   margin: auto;
   color: #000000;
 }
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(1) a:before {
+    display: none;
+  }
+}
 .mainNav ul li:nth-of-type(1):hover a:before {
   transition: top .2s ease;
   top: 1.8em;
   color: #ffffff;
+}
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(1):hover a:before {
+    display: none;
+  }
 }
 .mainNav ul li:nth-of-type(2) a:before {
   content: "Our Story";
@@ -587,10 +693,20 @@ HEADER
   margin: auto;
   color: #000000;
 }
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(2) a:before {
+    display: none;
+  }
+}
 .mainNav ul li:nth-of-type(2):hover a:before {
   transition: top .2s ease;
   top: 1.8em;
   color: #ffffff;
+}
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(2):hover a:before {
+    display: none;
+  }
 }
 .mainNav ul li:nth-of-type(3) a:before {
   content: "Advocacy";
@@ -601,10 +717,20 @@ HEADER
   margin: auto;
   color: #000000;
 }
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(3) a:before {
+    display: none;
+  }
+}
 .mainNav ul li:nth-of-type(3):hover a:before {
   transition: top .2s ease;
   top: 1.8em;
   color: #ffffff;
+}
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(3):hover a:before {
+    display: none;
+  }
 }
 .mainNav ul li:nth-of-type(4) a:before {
   content: "Tools";
@@ -615,10 +741,20 @@ HEADER
   margin: auto;
   color: #000000;
 }
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(4) a:before {
+    display: none;
+  }
+}
 .mainNav ul li:nth-of-type(4):hover a:before {
   transition: top .2s ease;
   top: 1.8em;
   color: #ffffff;
+}
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(4):hover a:before {
+    display: none;
+  }
 }
 .mainNav ul li:nth-of-type(5) a:before {
   content: "Partner";
@@ -629,10 +765,20 @@ HEADER
   margin: auto;
   color: #000000;
 }
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(5) a:before {
+    display: none;
+  }
+}
 .mainNav ul li:nth-of-type(5):hover a:before {
   transition: top .2s ease;
   top: 1.8em;
   color: #ffffff;
+}
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(5):hover a:before {
+    display: none;
+  }
 }
 .mainNav ul li:nth-of-type(6) a:before {
   content: "Resources";
@@ -643,10 +789,20 @@ HEADER
   margin: auto;
   color: #000000;
 }
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(6) a:before {
+    display: none;
+  }
+}
 .mainNav ul li:nth-of-type(6):hover a:before {
   transition: top .2s ease;
   top: 1.8em;
   color: #ffffff;
+}
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(6):hover a:before {
+    display: none;
+  }
 }
 .mainNav ul li:nth-of-type(7) a:before {
   content: "Contact";
@@ -657,10 +813,29 @@ HEADER
   margin: auto;
   color: #000000;
 }
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(7) a:before {
+    display: none;
+  }
+}
 .mainNav ul li:nth-of-type(7):hover a:before {
   transition: top .2s ease;
   top: 1.8em;
   color: #ffffff;
+}
+@media all and (max-width: 800px) {
+  .mainNav ul li:nth-of-type(7):hover a:before {
+    display: none;
+  }
+}
+@media all and (max-width: 800px) {
+  .mainNav ul li {
+    float: none;
+    width: 100%;
+    text-align: left;
+    padding-left: 3%;
+    border-bottom: 1px solid #a1a1a1;
+  }
 }
 .mainNav ul li:hover {
   transition: all .5s ease;
@@ -669,6 +844,11 @@ HEADER
 .mainNav ul li:hover a {
   color: #2274dd;
 }
+@media all and (max-width: 800px) {
+  .mainNav ul li:hover a {
+    color: #ffffff;
+  }
+}
 .mainNav ul li a {
   display: block;
   font-size: .8em;
@@ -676,12 +856,73 @@ HEADER
   text-decoration: none;
   color: #a1a1a1;
 }
+@media all and (max-width: 800px) {
+  .mainNav ul li a {
+    padding: 1em 0;
+  }
+}
 
 .on {
   background: #2274dd;
 }
 .on a {
   color: #ffffff !important;
+}
+
+.activeNav {
+  max-height: 30em;
+}
+
+.burgWrapper {
+  padding: 20px 0;
+  display: none;
+}
+@media all and (max-width: 800px) {
+  .burgWrapper {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+
+.burg {
+  display: block;
+  height: 5px;
+  width: 30px;
+  background: gray;
+  position: relative;
+  transition: all .2s ease;
+}
+.burg:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 30px;
+  height: 5px;
+  background: gray;
+  transition: all .2s ease;
+}
+.burg:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 5px;
+  background: gray;
+  transition: all .2s ease;
+}
+
+.activeBurg {
+  background: transparent;
+}
+.activeBurg:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.activeBurg:after {
+  transform: rotate(-45deg);
+  top: 0;
 }
 
 /***********
@@ -695,7 +936,17 @@ BANNER
   transition: display .6s ease;
   width: 100%;
   text-align: center;
-  min-height: 600px;
+}
+@media all and (max-width: 1050px) {
+  .banner {
+    background-position-x: 70%;
+  }
+}
+@media all and (max-width: 800px) {
+  .banner {
+    background-size: cover;
+    position: static;
+  }
 }
 .banner h1 {
   padding: 4em 0;
@@ -705,7 +956,21 @@ BANNER
 }
 @media all and (max-width: 1775px) {
   .banner h1 {
-    padding: 3.5em 0em;
+    padding: 3.5em 0;
+  }
+}
+@media all and (max-width: 1050px) {
+  .banner h1 {
+    padding: 3em 0;
+    font-size: 3em;
+  }
+}
+@media all and (max-width: 800px) {
+  .banner h1 {
+    padding: 5em 0 3.5em 0;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 1px #000;
+    margin: 0;
   }
 }
 

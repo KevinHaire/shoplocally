@@ -10,8 +10,8 @@ $lightLightGrey: #f4f4f4;
 $lightGrey: #bdbdbd;
 $darkGrey: #a1a1a1;
 $darkDarkGrey: #808080;
-$lightBlue: #73b4fb;
-$darkBlue: #3694f9;
+$lightBlue: #3694f9;
+$darkBlue: #2274dd;
 
 .contain {
 	width:1400px;
@@ -86,6 +86,9 @@ img {
 			right:0;
 			margin:auto;
 			color:#000000;
+			@media all and(max-width:800px) {
+				display:none;	
+			}
 		}
 	}
 	&:hover {
@@ -94,6 +97,9 @@ img {
 				transition:top .2s ease;
 				top:1.8em;
 				color:#ffffff;
+				@media all and(max-width:800px) {
+					display:none;	
+				}
 			}
 		}
 	}
